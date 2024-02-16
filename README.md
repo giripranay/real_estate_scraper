@@ -2,30 +2,32 @@
 A web scraper project that crawls zillow house listings website and returns json data for the given city.
 
 
-###Clone Repo:      
-**git clone https://github.com/giripranay/real_estate_scraper.git**
+### Clone Repo:   
 
-Navigate to the project directory:
+*git clone https://github.com/giripranay/real_estate_scraper.git*
 
-cd .\real_estate_scraper  
+## Navigate to the project directory:
 
-Install dependencies:
+*cd .\real_estate_scraper*  
 
-npm install
+## Install dependencies:
 
+*npm install*
 
-Navigate to the dist directory:
+## Navigate to the dist directory:
 
 cd .\src\dist\
 
-Run the server:
+## Run the server:
 
-node index.js
+*node index.js*
 
-#Open Postman and make a POST request to http://localhost:3000/scrape with JSON data containing the search text:
-{
+
+### Open Postman and make a POST request to http://localhost:3000/scrape with JSON data containing the search text:
+
+*{
   "searchQuery": "top home listing websites"
-}
+}*
 
 
 #The real estate listing websites enforce robust security measures to prevent unauthorized activities and ensure the integrity of their platforms. As a result, there are limitations on the amount of activity that can be conducted on these sites to avoid being blocked or restricted.
