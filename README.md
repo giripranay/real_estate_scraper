@@ -2,7 +2,7 @@
 A web scraper project that crawls zillow house listings website and returns json data for the given city.
 
 
-#Clone Repo:
+Clone Repo:
 git clone https://github.com/giripranay/real_estate_scraper.git
 
 #Navigate to the project directory:
