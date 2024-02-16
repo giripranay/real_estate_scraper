@@ -14,7 +14,7 @@ const puppeteer_1 = require("puppeteer");
 function getZillowUrl(url) {
     return __awaiter(this, void 0, void 0, function* () {
         // Launch Puppeteer browser
-        const browser = yield puppeteer_1.default.launch({ headless: false });
+        const browser = yield puppeteer_1.default.launch();
         // Create a new page
         const page = yield browser.newPage();
         try {

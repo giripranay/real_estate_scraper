@@ -14,10 +14,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.zillowScraper = void 0;
 const puppeteer_1 = require("puppeteer");
 const { zillowListings } = require("./listing.js");
-function zillowScraper() {
+
+async function zillowScraper() {
     try {
         // Navigate to zillow
-        let data = zillowListings();
+        let data = await zillowListings();
         return data;
     }
     finally {

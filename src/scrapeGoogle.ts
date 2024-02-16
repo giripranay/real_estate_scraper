@@ -4,7 +4,7 @@ import { zillowScraper } from './zillowScraper';
 
 async function scrapeGoogle(searchQuery: string): Promise<string> {
   // Launch Puppeteer browser
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch();
 
   // Create a new page
   const page = await browser.newPage();

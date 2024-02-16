@@ -75,6 +75,7 @@ let url = `https://www.zillow.com/dallas-tx/?searchQueryState={"isMapVisible":fa
 async function zillowListings(){
   let data = await zillowScrapper();
   console.log(data);
+  return data
 }
 
 //zillowListings();

@@ -2,7 +2,7 @@ import puppeteer from 'puppeteer';
 
 async function zillowScraper(url: string): Promise<string> {
   // Launch Puppeteer browser
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch();
 
   // Create a new page
   const page = await browser.newPage();
