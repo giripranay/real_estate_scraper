@@ -1,3 +1,5 @@
+//import {zillowListings} from "./listing.js";
+
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -11,21 +13,16 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.zillowScraper = void 0;
 const puppeteer_1 = require("puppeteer");
-function zillowScraper(url) {
-    return __awaiter(this, void 0, void 0, function* () {
-        // Launch Puppeteer browser
-        const browser = yield puppeteer_1.default.launch({ headless: false });
-        // Create a new page
-        const page = yield browser.newPage();
-        try {
-            // Navigate to zillow
-            yield page.goto(url, { waitUntil: 'domcontentloaded' });
-            return "sdasd";
-        }
-        finally {
-            // Close the browser
-            yield browser.close();
-        }
-    });
+const { zillowListings } = require("./listing.js");
+function zillowScraper() {
+    try {
+        // Navigate to zillow
+        let data = zillowListings();
+        return data;
+    }
+    finally {
+        // Close the browser
+        //yield browser.close();
+    }
 }
 exports.zillowScraper = zillowScraper;

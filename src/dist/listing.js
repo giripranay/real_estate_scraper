@@ -33,14 +33,20 @@ function extractArticles(html) {
     const bathrooms = $(element).find('ul.StyledPropertyCardHomeDetailsList-c11n-8-84-3__sc-1xvdaej-0.eYPFID li:nth-child(2)').text().trim();
     const sqft = $(element).find('ul.StyledPropertyCardHomeDetailsList-c11n-8-84-3__sc-1xvdaej-0.eYPFID li:nth-child(3)').text().trim();
     const type = $(element).find('div.StyledPropertyCardDataArea-c11n-8-84-3__sc-yipmu-0.dbDWjx').text().trim();
-
+    const photoUrls = [];
+    $(element).find('.StyledPropertyCardPhoto-c11n-8-84-3__sc-ormo34-0.dGCVxQ img').each((i, img) => {
+      photoUrls.push($(img).attr('src'));
+    });
+    const propertyUrl = $(element).find('a[data-test="property-card-link"]').attr('href');
     const article = {
       address,
       price,
       bedrooms,
       bathrooms,
       sqft,
-      type
+      type,
+      photoUrls,
+      propertyUrl
     };
 
     articles.push(article);
@@ -48,59 +54,28 @@ function extractArticles(html) {
 
   return articles;
 }
+async function zillowScrapper(){
 
-// Usage
-// getArticles().then(articles => {
-//   console.log(articles);
-// }).catch(error => {
-//   console.error(error);
-// });
-
-async function zillowScraper() {
-
-let count = 0;
+  let count = 1;
 
 let city = "Dallas, TX";
 
 // URL template with placeholders for dynamic values
 let url = `https://www.zillow.com/dallas-tx/?searchQueryState={"isMapVisible":false,"mapBounds":{"north":33.016646,"south":32.618763,"east":-96.555516,"west":-96.999347},"usersSearchTerm":${city},"filterState":{"sort":{"value":"globalrelevanceex"}},"isListVisible":true,"regionSelection":[{"regionId":38128,"regionType":6}],"pagination":{"currentPage":${count}}}`;
-
-const config = {
-    method: 'get',
-    maxBodyLength: Infinity,
-    url: url,
-    headers:{
-      'User-Agent': 'Node/12.14.1'
-    }
-  };
-
-  try {
-    const response = await axios.request(config);
-    // Load HTML content using Cheerio
-    const $ = cheerio.load(response.data);
-
-    // Extract text from the span element
-    const countText = $('span.result-count').text();
-
-    // Remove non-numeric characters using regular expression
-    const countValue = parseInt(countText.replace(/\D/g, ''), 10);
-    listing = [];
-    while(count<=countValue){
-        // getArticles(url).then(articles => {
-        //     listing.concat(articles);
-        //   }).catch(error => {
-        //     console.error(error);
-        //   });
-        count = count+1;
-        url = `https://www.zillow.com/dallas-tx/?searchQueryState={"isMapVisible":false,"mapBounds":{"north":33.016646,"south":32.618763,"east":-96.555516,"west":-96.999347},"usersSearchTerm":${city},"filterState":{"sort":{"value":"globalrelevanceex"}},"isListVisible":true,"regionSelection":[{"regionId":38128,"regionType":6}],"pagination":{"currentPage":${count}}}`;
-        console.log(url);
-    }
-    console.log(listing);
-  } catch (error) {
+  try{
+    var new_article = await getArticles(url);
+    return new_article;
+  }
+  catch (error) {
     console.error(error);
     return [];
   }
-
 }
 
-zillowScraper();
+async function zillowListings(){
+  let data = await zillowScrapper();
+  console.log(data);
+}
+
+//zillowListings();
+exports.zillowListings = zillowListings;
