@@ -30,7 +30,7 @@ cd .\src\dist\
 }*
 
 
-#The real estate listing websites enforce robust security measures to prevent unauthorized activities and ensure the integrity of their platforms. As a result, there are limitations on the amount of activity that can be conducted on these sites to avoid being blocked or restricted.
+**The real estate listing websites enforce robust security measures to prevent unauthorized activities and ensure the integrity of their platforms. As a result, there are limitations on the amount of activity that can be conducted on these sites to avoid being blocked or restricted.**
 
 In consideration of these limitations and to prevent potential disruptions, I have limited the number of records scraped during my testing to avoid triggering any security measures that could block my IP address. This cautious approach allows me to gather sufficient data for testing purposes without risking access issues or interruptions to the service.
 
