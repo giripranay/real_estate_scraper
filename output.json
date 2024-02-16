@@ -1,0 +1,124 @@
+{
+    "results": [
+        {
+            "address": "2507 Gilford St, Dallas, TX 75235",
+            "price": "$400,000",
+            "bedrooms": "2 bds",
+            "bathrooms": "1 ba",
+            "sqft": "1,203 sqft",
+            "type": "2 bds1 ba1,203 sqft - House for sale",
+            "photoUrls": [
+                "https://photos.zillowstatic.com/fp/6ace910e890777141faba52c3d2c3644-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/7687bc1847eb346a1911a9c888cc0d72-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/a85607552084b6609590656efc8270c0-p_e.jpg"
+            ],
+            "propertyUrl": "https://www.zillow.com/homedetails/2507-Gilford-St-Dallas-TX-75235/26726813_zpid/"
+        },
+        {
+            "address": "7168 Manor Oaks Dr, Dallas, TX 75248",
+            "price": "$775,000",
+            "bedrooms": "4 bds",
+            "bathrooms": "3 ba",
+            "sqft": "3,140 sqft",
+            "type": "4 bds3 ba3,140 sqft - House for sale",
+            "photoUrls": [],
+            "propertyUrl": "https://www.zillow.com/homedetails/7168-Manor-Oaks-Dr-Dallas-TX-75248/26893725_zpid/"
+        },
+        {
+            "address": "17515 Torrey Pine Dr, Dallas, TX 75287",
+            "price": "$1,450,000",
+            "bedrooms": "4 bds",
+            "bathrooms": "4 ba",
+            "sqft": "4,454 sqft",
+            "type": "4 bds4 ba4,454 sqft - House for sale",
+            "photoUrls": [
+                "https://photos.zillowstatic.com/fp/26b8b0ca9e7973dabfe5e70613457ce7-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/7da481e899d54f864fca3bb66e641e14-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/b8686fbd786cc8dc290fa19c230a368f-p_e.jpg"
+            ],
+            "propertyUrl": "https://www.zillow.com/homedetails/17515-Torrey-Pine-Dr-Dallas-TX-75287/26648863_zpid/"
+        },
+        {
+            "address": "524 Josephine St, Dallas, TX 75246",
+            "price": "$385,000",
+            "bedrooms": "2 bds",
+            "bathrooms": "3 ba",
+            "sqft": "1,406 sqft",
+            "type": "2 bds3 ba1,406 sqft - Townhouse for sale",
+            "photoUrls": [
+                "https://photos.zillowstatic.com/fp/61c4e526ec2aeeb3106fbda9462998cd-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/91ceb8a168ac195532864b407657f2c6-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/0a082d7a16d24494ee68a8ec561d8530-p_e.jpg"
+            ],
+            "propertyUrl": "https://www.zillow.com/homedetails/524-Josephine-St-Dallas-TX-75246/26898020_zpid/"
+        },
+        {
+            "address": "2928 Renaissance Cir, Dallas, TX 75287",
+            "price": "$350,000",
+            "bedrooms": "3 bds",
+            "bathrooms": "2 ba",
+            "sqft": "1,431 sqft",
+            "type": "3 bds2 ba1,431 sqft - House for sale",
+            "photoUrls": [
+                "https://photos.zillowstatic.com/fp/ff7e72bdb63062673650dee12f63b568-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/6adc46325090d17b7364d77ddc74203b-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/dec7e4dcd5c873177066ca048220b45f-p_e.jpg"
+            ],
+            "propertyUrl": "https://www.zillow.com/homedetails/2928-Renaissance-Cir-Dallas-TX-75287/27273811_zpid/"
+        },
+        {
+            "address": "11231 McCree Rd, Dallas, TX 75238",
+            "price": "$388,000",
+            "bedrooms": "3 bds",
+            "bathrooms": "2 ba",
+            "sqft": "2,268 sqft",
+            "type": "3 bds2 ba2,268 sqft - House for sale",
+            "photoUrls": [
+                "https://photos.zillowstatic.com/fp/6e61065062fa5c8c9fe015f6a9025f8f-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/2feccb478587df6b7f891583c9f9a9a4-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/a0d8f541ffe12f008ef1c7908602082d-p_e.jpg"
+            ],
+            "propertyUrl": "https://www.zillow.com/homedetails/11231-McCree-Rd-Dallas-TX-75238/26851369_zpid/"
+        },
+        {
+            "address": "1142 Elmhurst Pl, Dallas, TX 75224",
+            "price": "$489,500",
+            "bedrooms": "2 bds",
+            "bathrooms": "2 ba",
+            "sqft": "1,541 sqft",
+            "type": "2 bds2 ba1,541 sqft - House for sale",
+            "photoUrls": [
+                "https://photos.zillowstatic.com/fp/9c72b530c0a3fd4e01862ec2bd47093e-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/353c313e9e845cecd596d0daebeb8d09-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/ebc07f8919bb329f9b486a300f1a8bec-p_e.jpg"
+            ],
+            "propertyUrl": "https://www.zillow.com/homedetails/1142-Elmhurst-Pl-Dallas-TX-75224/26723632_zpid/"
+        },
+        {
+            "address": "3885 Durango Dr, Dallas, TX 75220",
+            "price": "$1,600,500",
+            "bedrooms": "5 bds",
+            "bathrooms": "5 ba",
+            "sqft": "4,397 sqft",
+            "type": "5 bds5 ba4,397 sqft - House for sale",
+            "photoUrls": [
+                "https://photos.zillowstatic.com/fp/8227215ae11727288a2464983dc54073-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/acc47cb66ec02cced8598dff4200471d-p_e.jpg",
+                "https://photos.zillowstatic.com/fp/8ef5388a250d1e8490f3bd47098cec6c-p_e.jpg"
+            ],
+            "propertyUrl": "https://www.zillow.com/homedetails/3885-Durango-Dr-Dallas-TX-75220/26789821_zpid/"
+        },
+        {
+            "address": "1655 Oak Glen Trl, Dallas, TX 75232",
+            "price": "$243,000",
+            "bedrooms": "3 bds",
+            "bathrooms": "2 ba",
+            "sqft": "1,810 sqft",
+            "type": "3 bds2 ba1,810 sqft - House for sale",
+            "photoUrls": [
+                "https://photos.zillowstatic.com/fp/fe637fd674603fc041720b98856db7a0-p_e.jpg"
+            ],
+            "propertyUrl": "https://www.zillow.com/homedetails/1655-Oak-Glen-Trl-Dallas-TX-75232/26855284_zpid/"
+        }
+    ]
+}

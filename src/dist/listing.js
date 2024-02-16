@@ -1,6 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-
+const { getChildPageContent } = require('./childPage.js');
+ 
 async function getArticles(url) {
   const config = {
     method: 'get',
@@ -25,7 +26,7 @@ async function getArticles(url) {
 function extractArticles(html) {
   const $ = cheerio.load(html);
   const articles = [];
-
+  
   $('article[data-test="property-card"]').each((index, element) => {
     const address = $(element).find('address[data-test="property-card-addr"]').text().trim();
     const price = $(element).find('[data-test="property-card-price"]').text().trim();
@@ -38,6 +39,7 @@ function extractArticles(html) {
       photoUrls.push($(img).attr('src'));
     });
     const propertyUrl = $(element).find('a[data-test="property-card-link"]').attr('href');
+    // const childContent = await getChildPageContent(propertyUrl);
     const article = {
       address,
       price,
@@ -47,6 +49,7 @@ function extractArticles(html) {
       type,
       photoUrls,
       propertyUrl
+      // childContent
     };
 
     articles.push(article);
