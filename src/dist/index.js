@@ -1,5 +1,5 @@
-import express from 'express';
-import { scrapeGoogle } from './scraper.js';
+const express = require('express');
+const { scrapeGoogle } = require('./scrapeGoogle.js');
 
 
 const app = express();
