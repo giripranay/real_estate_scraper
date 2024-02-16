@@ -23,7 +23,7 @@ cd .\src\dist\
 *node index.js*
 
 
-### Open Postman and make a POST request to http://localhost:3000/scrape with JSON data containing the search text:
+#### Open Postman and make a POST request to http://localhost:3000/scrape with JSON data containing the search text:
 
 *{
   "searchQuery": "top home listing websites"
