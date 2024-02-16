@@ -1,0 +1,17 @@
+{
+  "name": "real_estate_scraper",
+  "version": "1.0.0",
+  "description": "A web scraper project that crawls zillow house listings website and returns json data for the given city.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/puppeteer": "^7.0.4",
+    "puppeteer": "^22.0.0",
+    "typescript": "^5.3.3"
+  }
+}
